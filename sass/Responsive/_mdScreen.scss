@@ -1,0 +1,332 @@
+@media screen and (max-width: 992px) {
+    #header {
+        #navbar {
+            a {
+                padding: $pd-1 $pd-2;
+            }
+            a:first-child {
+                padding: $pd-1 $pd-2 - 5;
+            }
+            .discover-menu::before {
+                @include arrow(4%, unset);
+                top: 1.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        border-top: $border-2;
+    }
+}
+
+#search-area-xs {
+    @media screen and (max-width: 992px) {
+        background-color: $color-blue-100;
+        padding: $pd-1 $pd-1;
+    }
+    i {
+        @media screen and (max-width: 992px) {
+            color: $color-white;
+        }
+    }
+    input {
+        @media screen and (max-width: 992px) {
+            background-color: $color-blue-100;
+            width: 80%;
+            height: 2rem;
+            border: 2px solid $color-white;
+            height: 2.5rem;
+            border-radius: 5px;
+            margin-left: $mg-1;
+            padding-left: $pd-1;
+        }
+        &::placeholder {
+            @media screen and (max-width: 992px) {
+                color: $color-white;
+            }
+        }
+        font-weight: $font-weight-300;
+        color: $color-white;
+    }
+}
+
+#search-area {
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #header {
+        .navbar {
+            .discover-menu {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #vehicles {
+        #vehicle-list {
+            .vehicle-title {
+                h1 {
+                    top: $mg-up-2;
+                    position: relative;
+                    background-color: $color-grey;
+                    color: $color-blue-200;
+                    font-weight: $font-weight-bold;
+                    padding: 0 $pd-1;
+                    font-size: $font-size-3;
+                    i {
+                        font-size: $font-size-3 * 0.5;
+                        position: relative;
+                        top: $mg-up-1;
+                    }
+                    span {
+                        font-weight: $font-weight-normal;
+                        font-size: $font-size-2;
+                        position: relative;
+                        top: $mg-up-1;
+                    }
+                }
+            }
+            .vehicle-product {
+                color: $color-dark-blue-200;
+                margin-bottom: $mg-3;
+                &:hover > .vehicle-img img:last-child {
+                    display: block;
+                }
+                &:hover > .vehicle-img img:first-child {
+                    display: none;
+                }
+                .vehicle-img img:last-child {
+                    display: none;
+                }
+                h2 {
+                    font-size: $font-size-1;
+                    font-weight: $font-weight-bold;
+                    margin-bottom: $mg-1;
+                }
+                .vehicle-info {
+                    margin-bottom: $mg-2;
+                    h4 {
+                        font-weight: $font-weight-normal;
+                        font-size: $font-size-1;
+                    }
+                    p {
+                        font-size: $font-size-1 - 4;
+                        margin-bottom: $mg-1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #swiper-slider {
+        height: 600px;
+        .swiper {
+            height: 400px;
+            .swiper-wrapper {
+                height: 100%;
+                .swiper-slide {
+                    height: 100%;
+                }
+            }
+        }
+        .swiper-btn {
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom: 32%;
+            z-index: 4;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .intro {
+        .intro-container {
+            .intro-right {
+                background-image: url(/img/intro-2-xs.jpg);
+                .intro-right-content {
+                    width: 80%;
+                    left: 10%;
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+            .intro-left {
+                .intro-left-content {
+                    width: 80%;
+                    left: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #our-vehicles {
+        .carousel-caption-config {
+            top: 12%;
+        }
+        .carousel-indicators__config {
+            width: 100%;
+            li {
+                &.active {
+                    &::before {
+                        bottom: 88%;
+                    }
+                }
+            }
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        i {
+            font-size: $font-size-2;
+        }
+    }
+    .carousel-indicators__config {
+        width: 100%;
+        text-align: center;
+        > p {
+            margin-bottom: 0.3rem;
+        }
+    }
+
+    .carousel-caption-config {
+        width: 60%;
+        margin: auto;
+        left: 20%;
+        text-align: center;
+        bottom: 12%;
+        top: unset;
+        font-size: $font-size-1 - 0.2;
+        .carousel-caption-detail {
+            .carousel-detail-content {
+                h2 {
+                    font-size: $font-size-3 - 0.2;
+                }
+                p {
+                    font-size: $font-size-1 - 0.2;
+                }
+            }
+        }
+    }
+    .carousel-caption-footer {
+        width: 100%;
+        border: none;
+        bottom: 1%;
+        justify-content: center;
+    }
+    .carousel-control-next {
+        right: 0;
+    }
+
+    .carousel-control-prev {
+        left: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    #our-vehicles {
+        .carousel-caption-config {
+            width: 36%;
+        }
+    }
+    .intro {
+        .intro-container {
+            .intro-left, .intro-right {
+                margin-top: $mg-up-3 + 50;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #discover {
+        .discover-title {
+            h1 {
+                font-size: $font-size-3 + 0.8;
+            }
+            span {
+                font-size: $font-size-1 - 0.1;
+            }
+        }
+    }
+    #search-field {
+        flex-wrap: wrap;
+        padding: 0 $pd-4;
+        div {
+            padding: 0;
+            width: 75%;
+            display: flex;
+            align-items: center;
+            input {
+                width: 100%;
+                height: 3rem;
+                font-size: $font-size-1;
+            }
+            button {
+                border-color: $color-blue-200;
+                border-radius: 40px;
+                color: $color-blue-200;
+                margin: 10px 0;
+                &:hover {
+                    background-color: $color-blue-100;
+                    color: $color-white;
+                }
+            }
+        }
+        p {
+           text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #footer {
+        .footer-detail {
+            width: 25%;
+        }
+        .footer-touch {
+            .touch-right {
+                .btn-search {
+                    border-color: $color-blue-200;
+                    color: $color-blue-200;
+                    border-radius: 40px;
+                    &:hover {
+                        color: $color-white;
+                        background-color: $color-blue-200;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #copy-right {
+        .copy-right-right {
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    padding: 0 10px;
+                }
+            }
+        }
+        .logo-footer {
+            img {
+                max-width: 50%;
+                height: 30px;
+            }
+        }
+    }
+}

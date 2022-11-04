@@ -1,0 +1,160 @@
+#our-vehicles {
+    background-color: $color-grey;
+    border: 1px solid transparent;
+    .carousel {
+        height: 600px;
+    }
+    .carousel-inner, .carousel-item {
+        height: 95%;
+    }
+    h1 {
+        color: $color-blue-200;
+        font-size: $font-size-4 - 15;
+        margin:$mg-2 0 $mg-4 0 ;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        i {
+            font-size: $font-size-5;
+            top: 45%;
+            padding: $pd-2;
+            border-radius: 0.9rem;
+            background-color: $color-blue-overlay;
+        }
+    }
+    .carousel-indicators__config {
+        margin-bottom: $mg-2;
+        width: 55%;
+        li {
+            color: $color-dark-blue-200;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-1 - 0.2;
+            padding: $pd-1 $pd-2;
+            cursor: pointer;
+            border-radius: 3rem;
+            display: flex;
+            justify-content: center;
+            &.active {
+                color: $color-white;
+                background-color: $color-blue-200;
+                &::before {
+                    content: "";
+                    border-top: $arrow-width solid $color-white;
+                    border-left: $arrow-width solid transparent;
+                    border-right: $arrow-width solid transparent;
+                    position: absolute;
+                    bottom: 88%;
+                    z-index: 6;
+                }
+            }
+        }
+    }
+    .carousel-caption-config {
+        width: 30%;
+        position: absolute;
+        top: 8%;
+        left: 6%;
+        color: $color-white;
+        font-size: $font-size-1 - 0.3;
+        >p {
+            font-weight: $font-weight-bold;
+            margin-bottom: 0;
+            span {
+                font-weight: $font-weight-normal;
+            }
+        }
+        img {
+            width: 60%;
+            transform: translateX($pd-2 * -1 + 1);
+        }
+        .caption-content {
+            font-weight: $font-weight-300;
+            margin-bottom: $mg-2;
+        }
+
+        .carousel-caption-detail {
+            margin-bottom: $mg-2;
+            .carousel-detail-content {
+                h2 {
+                    font-weight: $font-weight-300;
+                    font-size: $font-size-2;
+                }
+                p {
+                    font-size: $font-size-1 - 0.4;
+                    font-weight: $font-weight-bold;
+                    margin-bottom: 10px;
+                }
+            }
+        } 
+    }
+    .carousel-caption-footer {
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: $border-2;
+        a {
+            font-size: $font-size-1 - 0.4;
+            font-weight: $font-weight-bold;
+            color: $color-white;
+            text-decoration: none;
+
+        }
+    }
+    .function-container {
+        padding: 0 6.1%;
+        margin: $mg-5 0;
+    }
+    .function {
+        height: 300px;
+        box-shadow: $box-shadow-2;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            transform: translateY($mg-2 * -1);
+            .btn-go {
+                background-color: transparent;
+                color: $color-blue-200;
+            }
+        }
+        h3 {
+            font-size: $font-size-1;
+            font-weight: $font-weight-bold;
+            margin-bottom: $mg-1;
+            color: $color-dark-blue-200;
+        }
+        p {
+            font-size: $font-size-1 - 0.4;
+            font-weight: $font-weight-300;
+            margin-bottom: $mg-2;
+            color: $color-dark-blue-100;
+            padding: 0 10%;
+        }
+        div {
+            position: absolute;
+            text-align: center;
+            top: 40%;
+            left: 0;
+        }
+    }
+    .intro-left-1 {
+        background-image: url(/img/intro-3.jpg);
+        margin-top: 0;
+        margin-bottom: $mg-2;
+    }
+    .intro-right-1 {
+        background-image: url(/img/intro-4.jpg);
+        margin-top: 0;
+    }
+}
+.transform-rotate {
+    transform: rotate(180deg);
+}
+
+.d-fluid {
+    max-width: 100%;
+}
+
+.pd-col {
+    padding: $pd-1;
+}

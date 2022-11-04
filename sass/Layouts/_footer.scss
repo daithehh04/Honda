@@ -1,0 +1,91 @@
+#footer {
+    padding: $pd-3 $pd-8;
+    background-color: $color-grey;
+    flex-wrap: wrap;
+    h1 {
+        font-weight: $font-weight-bold;
+        margin: $mg-2 0;
+        color: $color-dark-blue-200;
+        font-size: $font-size-1;
+    }
+    .footer-detail {
+        ul {
+            li {
+                margin-bottom: $mg-2;
+                a {
+                    text-decoration: none;
+                    font-size: $font-size-1 - 0.3;
+                    color: $color-blue-200;
+                }
+            }
+        }
+    }
+    .footer-touch {
+        width: 100%;
+        margin-top: $mg-3;
+        border-top: $border-2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: $pd-3 0;
+        .touch-left {
+            i {
+                @include social-icons;
+            }
+        }
+        .touch-right {
+            text-align: right;
+            margin-top: $mg-2;
+            p {
+                font-size: $font-size-1 - 0.3;
+                color: $color-dark-blue-200;
+                margin-bottom: $mg-2;
+            }
+            .btn-search {
+                margin: 0;
+            }
+        }
+    }
+}
+
+#copy-right {
+    background-color: $color-blue-100;
+    padding: $pd-2 0;
+    .copy-right-left {
+        p {
+            font-size: $font-size-1 - 0.3;
+            color: $color-grey; 
+            a {
+                text-decoration: none;
+                color: $color-grey;
+                font-style: italic;
+            }
+        }
+    }
+    .copy-right-right {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            li {
+                padding: 0 $pd-2;
+                margin-left: $mg-1;
+                border-left: $border-3;
+                a {
+                    text-decoration: none;
+                    font-size: $font-size-1 - 0.3;
+                    color: $color-grey;
+                }
+                &:first-child {
+                    border-left: none;
+                }
+            }
+        }
+    }
+    .logo-footer {
+        margin-top: $mg-2;
+        img {
+            max-width: 50%;
+            height: 50px;
+        }
+    }
+}

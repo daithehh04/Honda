@@ -1,0 +1,40 @@
+@mixin button($border, $bg, $color, $padding, $bg-hover, $color-hover) {
+    border: 2px solid $border;
+    border-radius: 40px;
+    background-color: $bg;
+    color: $color;
+    padding: $padding;
+    font-size: $font-size-1;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        background-color: $bg-hover;
+        color: $color-hover;
+    }
+}
+
+@mixin arrow($left, $right) {
+    content: '';
+    border-bottom: 15px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: $left;
+    right: $right;
+}
+
+@mixin section-padding {
+    padding:0 $pd-8;
+}
+
+@mixin social-icons {
+    width: 30px;
+    height: 30px;
+    background-color: $color-blue-100;
+    border-radius: 50%;
+    color: $color-white;
+    font-size: $font-size-1;
+    text-align: center;
+    line-height: 30px;
+}

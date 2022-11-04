@@ -1,0 +1,90 @@
+#discover {
+    background-color: $color-grey;
+    .discover-title {
+        h1 {
+            font-size: $font-size-4 - 0.5;
+            font-weight: $font-weight-300;
+            color: $color-blue-100;
+            margin: 0;
+        }
+        span {
+            color: $color-dark-blue-200;
+            font-weight: $font-weight-300;
+            font-size: $font-size-1 - 0.1;
+        }
+    }
+    .discover-item {
+        height: 400px;
+        position: relative;
+        margin-top: $mg-2;
+        box-shadow: $box-shadow-2;
+        .discover-item-content {
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: 8%;
+            h2,a {
+                font-weight: $font-weight-bold;
+                margin-bottom: $mg-2;
+                font-size: $font-size-1;
+                color: $color-dark-blue-200;
+            }
+            p {
+                font-weight: $font-weight-300;
+                font-size: $font-size-1 - 0.3;
+                padding: 0 $pd-1;
+            }
+            a {
+                text-decoration: none;
+                color: $color-blue-200;
+                font-size: $font-size-1 - 0.3;
+            }
+        }
+    }
+    .discover-item-6 {
+        color: $color-blue-200;
+        background-color: $color-white;
+        position: relative;
+        >i {
+            font-size: $font-size-2;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        .discover-item-switter {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            a {
+                color: $color-blue-200;
+                text-decoration: none;
+            }
+            .discover-switter-logo {
+                img {
+                    border-radius: 8px;
+                    margin-right: $mg-1;
+                    height: 4rem;
+                }
+                p {
+                    font-size: $font-size-1;
+                    a:first-child {
+                        font-weight: $font-weight-bold;
+                    }
+                }
+            }
+            >p {
+                font-size: $font-size-1 - 0.3;
+                color: $color-dark-blue-200;
+            }
+            .discover-switter-icon {
+                color: $color-blue-200;
+                span {
+                    margin-right: $mg-2;
+                }
+            }
+        }
+    }
+    button {
+        margin: $mg-3 0;
+    }
+}

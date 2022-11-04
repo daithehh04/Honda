@@ -1,0 +1,34 @@
+#swiper-slider {
+    height: 750px;
+    margin-top: $mg-5;
+    background-color: $color-dark-blue-200;
+    .swiper {
+        height: 500px;
+        .swiper-wrapper {
+            height: 100%;
+            .swiper-slide {
+                height: 100%;
+            }
+        }
+    }
+
+    .swiper-button-next {
+        right: -.1rem;
+    }
+
+    .swiper-button-prev {
+        left: -.1rem;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+    background-color: #ffffffe6;
+    border-radius: 5px;
+    padding: $pd-2;
+    }
+    .swiper-btn {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        z-index: 4;
+    }
+}

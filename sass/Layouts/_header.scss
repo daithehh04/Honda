@@ -1,0 +1,100 @@
+#header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .navbar {
+        padding: 0;
+        background-color: $color-blue-100;
+        .navbar-brand {
+            margin-right: 0;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        .navbar-toggler-icon {
+            color: $color-white;
+            border: none;
+        }
+    }
+    .navbar {
+        .discover-menu {
+            left: unset;
+            right: -20%;
+            width: 40rem;
+            box-shadow: $box-shadow;
+            padding: $pd-4;
+            border: none;
+            &::before {
+                @include arrow(unset, 15%)
+            }
+            .dropdown-item {
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+            .dropdown-menu-detail {
+                display: flex;
+                > div {
+                    width: 50%;
+                }
+                h3 {
+                    margin-bottom: $mg-2;
+                    color: $color-dark-blue-200;
+                    font-weight: $font-weight-bold;
+                }
+                .dropdown-detail-right {
+                    padding-left: $pd-3;
+                }
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        margin-bottom: $mg-2 - 5;
+                        a {
+                            color: $color-blue-200;
+                            border: none;
+                            padding: 0;
+                            font-weight: $font-weight-bold;
+                            font-size: $font-size-1;
+                        }
+                    }                  
+                }
+                
+            }
+
+            .dropdown-menu-social {
+                display: flex;
+                justify-content: space-around;
+                margin-top: $mg-2;
+                i {
+                    @include social-icons();
+                }
+            }
+        }
+        a {
+            color: $color-dark-white;
+            padding: $pd-3 $pd-4;
+            border-right: $border-1;
+            border-left: $border-1;
+            text-decoration: none;
+        }
+        .nav-item .nav-link {
+            padding: $pd-3 $pd-4;
+        }
+        a.active {
+            color: $color-blue-100;
+            text-decoration: none;
+            background-color: $color-white;
+        }
+    }
+    a:first-child {
+        padding: 0 $pd-2;
+    }
+}
+
+.no-border {
+    border: 0 !important;
+}

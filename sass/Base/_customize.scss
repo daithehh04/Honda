@@ -1,0 +1,18 @@
+// BOOTSTRAP CUSTOMIZE
+.carousel {
+    overflow: hidden;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+.carousel-control-next {
+    right: -.8rem;
+}
+
+.carousel-control-prev {
+    left: -.8rem;
+}
+
+.img-fluid {
+    width: 100% !important;
+}

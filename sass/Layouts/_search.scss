@@ -1,0 +1,56 @@
+.search-field {
+    background-color: $color-grey;
+    padding: $pd-1 $pd-5;
+    position: relative;
+    i {
+        color: $color-blue-200;
+        font-size: $font-size-1;
+        margin-right: $mg-1;
+    }
+    input {
+        width: 85%;
+        height: 4rem;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        &::placeholder {
+            font-size: $font-size-1;
+        }
+        font-weight: $font-weight-300;
+        font-size: $font-size-2;
+        color: $color-blue-100;
+    }
+    &::before {
+        @include arrow(unset, 0.5%);
+        border-bottom-color: $color-grey;
+    }
+}
+
+#search-field {
+    padding: 0 $pd-6;
+    background-color: $color-white;
+    border: $border-3;
+    div {
+        padding: 0;
+        width: 85%;
+        border-right: $border-2;
+        input {
+            width: 85%;
+            height: 3rem;
+            font-size: $font-size-1;
+        }
+        button {
+            margin: 10px 0;
+        }
+    }
+    p {
+        flex-grow: 1;
+        margin: 0;
+        text-align: right;
+        cursor: pointer;
+        color: $color-blue-200;
+    }
+    &::before {
+        display: none;
+    }
+}

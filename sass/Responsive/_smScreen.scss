@@ -1,0 +1,375 @@
+@media screen and (max-width: 768px) {
+    #header {
+        #navbar {
+            a {
+                padding: $pd-1 $pd-2;
+            }
+            a:first-child {
+                padding: $pd-1 $pd-2 - 5;
+            }
+            .discover-menu::before {
+                @include arrow(4%,unset);
+                top: 1.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        border-top: $border-2;
+    }
+}
+
+#search-area-xs {
+    @media screen and (max-width: 768px) {
+        background-color: $color-blue-100;
+        padding: $pd-1 $pd-1
+    }
+    i {
+    @media screen and (max-width: 768px) {
+        color: $color-white;
+        }
+    }
+    input {
+        @media screen and (max-width: 768px) {
+            background-color: $color-blue-100;
+            width: 80%;
+            height: 2rem;
+            border: 2px solid $color-white;
+            height: 2.5rem;
+            border-radius: 5px;
+            margin-left: $mg-1;
+            padding-left: $pd-1;
+        }
+        &::placeholder {
+            @media screen and (max-width: 768px) {
+                color: $color-white;
+            }
+        }
+        font-weight: $font-weight-300;
+        color: $color-white;
+    }
+}
+
+#search-area {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        .navbar {
+            .discover-menu {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #vehicles {
+        #vehicle-content {
+            .vehicle-nav {
+                ul li {
+                    display: inline-block;
+                    // margin-bottom: $mg-2;
+                }
+                ul li a {
+                    border: none;
+                }
+            }
+        }
+    }        
+}
+
+@media screen and (max-width: 768px) {
+#vehicles {
+    #vehicle-list {
+        .vehicle-title {
+            h1 {
+                top: $mg-up-2;
+                position: relative;
+                background-color: $color-grey;
+                color: $color-blue-200;
+                font-weight: $font-weight-bold;
+                padding: 0 $pd-1;
+                font-size: $font-size-3;
+                i {
+                    font-size: $font-size-3 * 0.5;
+                    position: relative;
+                    top: $mg-up-1;
+                }
+                span {
+                    font-weight: $font-weight-normal;
+                    font-size: $font-size-2;
+                    position: relative;
+                    top: $mg-up-1;
+                }
+            }
+        }
+        .vehicle-product {
+            color: $color-dark-blue-200;
+            margin-bottom: $mg-3;
+            &:hover > .vehicle-img img:last-child {
+                display: block;
+            }
+            &:hover > .vehicle-img img:first-child {
+                display: none;
+            }
+            .vehicle-img img:last-child {
+                display: none;
+            }
+            h2 {
+                font-size: $font-size-1;             
+                font-weight: $font-weight-bold;
+                margin-bottom: $mg-1;
+            }
+            .vehicle-info {
+                margin-bottom: $mg-2;
+                    h4 {
+                        font-weight: $font-weight-normal;
+                        font-size: $font-size-1;
+                    }
+                p {
+                    font-size: $font-size-1 - 4;
+                    margin-bottom: $mg-1;
+                }
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        .intro-container {
+            .intro-right {
+                background-image: url(/img/our-vehicles-intro-2.jpg);
+                margin-top: $mg-2;
+                .intro-right-content {
+                    width: 40%;
+                    left: 5%;
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    #our-vehicles {
+        .carousel-control-prev, .carousel-control-next {
+            i {
+                font-size: $font-size-2;
+            }
+        }
+        .carousel-indicators__config {
+            width: 100%;
+            text-align: center;
+            > p {
+                margin-bottom: 0.3rem;
+            }
+        }
+        .carousel-caption-config {
+            width: 60%;
+            margin: auto;
+            left: 20%;
+            text-align: center;
+            bottom: 8%;
+            top: unset;
+            font-size: $font-size-1 - 0.2;
+            .carousel-caption-detail {
+                .carousel-detail-content {
+                    h2 {
+                        font-size: $font-size-3 - 0.2;
+                    }
+                    p {
+                        font-size: $font-size-1 - 0.2;
+                    }
+                }
+            }
+        }
+        .carousel-caption-footer {
+            width: 100%;
+            border: none;
+            bottom: 1%;
+            justify-content: center;
+        }
+    }
+    .carousel-control-next {
+        right: 0;
+    }
+
+    .carousel-control-prev {
+        left: 0;
+    }
+    .carousel-indicator-xs {
+        width: 60%;
+        margin: auto;
+        background-color: $color-white;
+        border: $border-2;
+        .indicator-xs-header {
+            padding: 0 $pd-2;
+            justify-content: space-between;
+        }
+        h2 {
+            font-size: $font-size-1 - 0.2;
+            color: $color-blue-100;
+            font-weight: $font-weight-300;
+            padding-left: $pd-2 0;
+            span {
+                font-size: $font-size-1 - 0.2;
+                font-weight: $font-weight-bold;
+                color: $color-dark-blue-100;
+            }
+        }
+        i {
+            font-size: $font-size-2;
+            color: $color-blue-100;
+            transition: all 0.5s ease;
+        }
+        ol {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border-top: $border-1;
+            display: none;
+            li {
+                color: $color-dark-blue-100;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-1 - 0.2;
+                padding: $pd-2;
+                cursor: pointer;
+            }
+        }
+    }
+    #our-vehicles {
+        .carousel-indicator-xs {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            z-index: 4;
+        }
+        h1 {
+            font-size: $font-size-3;
+        }
+        .carousel-inner {
+            top: $mg-3;
+        }
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    #discover {
+        .discover-title {
+            h1 {
+                font-size: $font-size-3;
+            }
+            span {
+                font-size: $font-size-1 - 0.2;
+            }
+        }
+    }
+
+    #search-field {
+        flex-wrap: wrap;
+        padding: 0 $pd-4;
+        div {
+            padding: 0;
+            width: 100%;
+            border-right:none;
+            border-top: $border-3;
+            display: flex;
+            align-items: center;
+            input {
+                width: 100%;
+                height: 3rem;
+                font-size: $font-size-1;
+            }
+            button {
+                border-color: $color-blue-200;
+                border-radius: 40px;
+                color: $color-blue-200;
+                margin: 10px 0;
+                &:hover {
+                    background-color: $color-blue-100;
+                    color: $color-white;
+                }
+            }
+        }
+        p {
+            padding-top: $pd-2;
+           text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footer {
+        background-color: $color-white;
+        padding: 0;
+        .footer-detail {
+            width: 100%;
+            h1 {
+                background-color: $color-grey;
+                padding:$pd-2;
+                justify-content: space-between;
+                margin-bottom: 0;
+                i {
+                    @include social-icons;
+                    color: $color-blue-200;
+                    background-color: transparent;
+                    border: $border-1;
+                }
+            }
+            ul {
+                padding-left: $pd-2;
+            }
+        }
+        .footer-touch {
+            .touch-left, .touch-right {
+                width: 100%;
+                text-align: left;
+                padding: $pd-2 $pd-3;
+            }
+            .touch-right {
+                .btn-search {
+                    border-color: $color-blue-100;
+                    border-radius: 40px;
+                    color: $color-blue-200;
+                    &:hover {
+                        background-color: $color-blue-100;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #copy-right {
+        .copy-right-right {
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    padding: 0 10px;
+                }
+            }
+        }
+        .logo-footer {
+            flex-wrap: wrap;
+            img {
+                display: none;
+                &:first-child {
+                    display: block;
+                }
+            }
+            
+        }
+    }
+}
